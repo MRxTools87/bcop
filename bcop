@@ -2,7 +2,7 @@
 
 #********************************************#
 #                                            #
-#  Rewind v6.0                               #
+#  bcop v6.0                                 #
 #  A CLI tool to backup and restore termux   #
 #  Author : https://github.com/laraib07      #
 #                                            #
@@ -39,7 +39,7 @@ echo -e "$G■──────────────────────
 
 # FUNCTIONS
 function show_help() {
-    printf  "${off}Usage: ${W}rewind${off} [-hv] [-b|-r [home|pkgs]]\n
+    printf  "${off}Usage: ${W}bcop${off} [-hv] [-b|-r [home|pkgs]]\n
     -h               print this usage
     -v               print version
     -b [home|pkgs]   backup home and/or packages
@@ -289,7 +289,7 @@ done
 
 if [[ -z "$1" ]]; then
     error "no options provided"
-    printf "try 'rewind -h' for help.\n"
+    printf "try 'bcop -h' for help.\n"
     exit 1
 fi
 
